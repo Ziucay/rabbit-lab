@@ -16,6 +16,6 @@ EXPOSE 8082
 
 WORKDIR /app
 
-COPY --from=maven /app/target/producer-1.0-SNAPSHOT.jar ./
+COPY --from=maven /app/consmer/target/producer-1.0-SNAPSHOT.jar ./
 
 CMD ["java", "-jar", "./producer-1.0-SNAPSHOT.jar"]
